@@ -1,0 +1,16 @@
+package application;
+
+import javafx.scene.control.Button;
+import javafx.scene.control.Dialog;
+import javafx.scene.control.TextField;
+
+public class MyDialog extends Dialog{
+	private TextField path;
+	public String start() {
+		this.setTitle("SQLJava");
+		setContentText("Enter path");
+		Button enter = new Button("Done");
+		
+		return "";
+	}
+}

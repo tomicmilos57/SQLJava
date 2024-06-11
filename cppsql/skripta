@@ -1,0 +1,5 @@
+#!/bin/bash
+cd build
+g++ -c ../*.cpp
+cd ..
+g++ -shared -o ../sqljava/src/database/database.dll build/*.o -Wl,--add-stdcall-alias
